@@ -69,9 +69,48 @@
                 // 配列要素の作成・挿入
                 words.splice(0, 0,
                     'daikyoukinn',
-                   );
+                    'daitaisitoukinn',
+                    'jouwannnitoukinn',
+                    'jouwannsanntoukinn',
+                    'hukutyokukinn',
+                    'zenkyokinn',
+                    'souboukinn',
+                    'kouhaikinn',
+                    'sannkakukinn',
+                    'daiennkinn',
+                    'jouwannkinn',
+                    'daidennkinn',
+                    'zennwannkutukinngunn',
+                    'tyouhaikinn',
+                    'tyouyoukinngunn',
+                    'hiramekinn',
+                    'miyaohutosi',
+                    'tikubi');
+                  
+                  
+                  
+                  
+                  
+                  
                     ja.splice(0, 0,
                         '大胸筋',
+                        '大腿四頭筋',
+                        '上腕二頭筋',
+                        '上腕三頭筋',
+                        '腹直筋',
+                        '前鋸筋',
+                        '僧帽筋',
+                        '広背筋',
+                        '三角筋',
+                        '大円筋',
+                        '上腕筋',
+                        '大臀筋',
+                        '前腕屈筋群',
+                        '長背筋',
+                        '腸腰筋群',
+                        'ヒラメ筋',
+                        'みやおふとし',
+                        '乳首',
                         );
                         setWord();
                     }, 2000);
