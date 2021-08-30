@@ -1,0 +1,58 @@
+body  {
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+#title {
+    margin-top:100px;
+    font-size: 60px;
+    
+    
+}
+#result {
+    color: tomato;
+    font-size: 100px;
+}
+
+#retry{
+    color:blue;
+    font-size:60px;
+}
+.wrap{
+     text-align:center;
+}
+
+
+h1 {
+    font-size: 180px;
+    margin-top: 150px;
+}
+h2{
+    font-size: 80px;
+}
+
+#timer{
+    margin-top: 150px;
+    font-size: 200px;
+}
+
+#owari{
+    font-size: 200px;
+}
+
+#sto{
+        position: absolute;
+        top:80px;
+        bottom:630px;
+        left:700px;
+        right: auto;
+       text-decoration: none;
+        font-size: 50px;
+        color: #fff;
+  background-color: #eb6100;
+  border-radius: 0.5rem;
+
+      }
+      
