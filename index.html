@@ -1,28 +1,84 @@
-
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="index.css">
-    <title>筋肉タイピング</title>
+    <link rel="stylesheet" href="sto.css">
+    <link rel="icon" href="../FAVICON/1486503793-brilliant-diamond-gem-gemstone-jewel-premium-rhinestone_81248.ico">
+    <title>ストップウォッチ</title>
+    <style>
+      @font-face {
+        font-family: 'DSEG';
+        src: url('../fonts-DSEG_v046/DSEG14-Classic/DSEG14Classic-Regular.ttf');
+      }
+
+      #timer {
+        font-family: 'DSEG';
+      }
+      #timer2{
+        font-family: 'DSEG';
+      }
+    </style>
 </head>
 <body>
-    <a href="../stop/index.html" id="sto" target="_blank">ストップウォッチ</a>
+  <div class="sto">
+  <p id="RealtimeClockArea">00:00:00</p>
+  <div class="container">
+
+   <div class = "aa">
+  <div id="timer" class="woch">00:00:00</div><div id  ="timer2" class="woch">.000</div>
+</div>
+  
+  <div class="con">
+  <div class="btn aaa" id="start" >天才が今日も頑張る</div>
+  <div class="btn bbb" id="stop" >天才にも少し休憩が必要</div> 
+  <div class="btn ccc" id="reset" >天才にも終わりがある</div> 
+</div>
+</div>
+</div>
+<script>
+function showClock1() {
+   var nowTime = new Date();
+   var nowHour = String(nowTime.getHours()).padStart(2,'0');
+   var nowMin  = String(nowTime.getMinutes()).padStart(2,'0')
+   var nowSec  = String(nowTime.getSeconds()).padStart(2,'0');
+   var msg = + nowHour + ":" + nowMin + ":" + nowSec  ;
+   document.getElementById("RealtimeClockArea").innerHTML = msg;
+}
+setInterval('showClock1()',1000);
+</script>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th id ="prev">&laquo;</th>
+          <th id ="title" colspan="5">2021/8/19</th>
+          <th id ="next">&raquo;</th>
+          
+      </tr>
+
+      <tr>
+          <th>日</th>
+          <th>月</th>
+          <th>火</th>
+          <th>水</th>
+          <th>木</th>
+          <th>金</th>
+          <th>土</th>
+          
+      </tr>
+  </thead>
+  <tbody>
    
-    <div id="timer"></div>
-　<h1 id ="taiping">筋肉タイピング</h1>
-<h2 id ="start">スペース押下でトレーニング開始ぃ！！</h2>
+  </tbody>
+  <tfoot>
+      <tr>
+          <td id="today" colspan="7">Today</td>
+      </tr>
+  </tfoot>
+</table>
 
- <p id="result"></p>
- <p id="title"></p>
-   <p id ="owari"></p>
-    <p id="retry"></p> 
-
-
-    <script src="index.js"></script>
+<script src="./sto.js"></script>
 </body>
-
 </html>
